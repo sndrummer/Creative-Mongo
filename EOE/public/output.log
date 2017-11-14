@@ -1,0 +1,315 @@
+
+> EOE@0.0.0 start /opt/bitnami/apache2/htdocs/Node-Creative/EOE
+> node ./bin/www "nohup" "node" "./bin/www"
+
+[0mGET / [36m304 [0m6.605 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.250 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.739 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.681 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.256 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m5.380 ms - -[0m
+[0mGET / [36m304 [0m0.338 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.494 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.504 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.265 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.545 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.932 ms - -[0m
+[0mGET / [36m304 [0m0.336 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.284 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.424 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.271 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.399 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.725 ms - -[0m
+[0mGET / [36m304 [0m10.274 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m5.693 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m1.731 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.610 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.341 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m2.490 ms - -[0m
+[0mGET / [36m304 [0m0.330 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.570 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m5.048 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.471 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.484 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.985 ms - -[0m
+[0mGET / [36m304 [0m0.349 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.528 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.621 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.199 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.320 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.626 ms - -[0m
+[0mGET / [32m200 [0m2.634 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.144 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.380 ms - 7513[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.566 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.477 ms - 1144887[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.783 ms - 7520[0m
+[0mGET /favicon.ico [33m404 [0m296.507 ms - 1265[0m
+[0mGET / [32m200 [0m1.288 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.773 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.480 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.790 ms - 7520[0m
+[0mGET /han-solo.png [32m200 [0m0.327 ms - 1144887[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.732 ms - 1151688[0m
+[0mGET /favicon.ico [33m404 [0m36.409 ms - 1265[0m
+[0mGET / [32m200 [0m0.482 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.887 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.613 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.853 ms - 7520[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m1.024 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m1.107 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m48.119 ms - 1265[0m
+[0mGET / [36m304 [0m16.562 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.983 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m1.002 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.296 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.194 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m1.002 ms - -[0m
+[0mGET / [32m200 [0m1.236 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.790 ms - 2293[0m
+[0mGET /javascripts/app.js [36m304 [0m0.417 ms - -[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.587 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.479 ms - 1144887[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m1.186 ms - 7520[0m
+[0mGET /favicon.ico [33m404 [0m38.890 ms - 1265[0m
+[0mGET / [32m200 [0m0.489 ms - 20018[0m
+[0mGET / [32m200 [0m0.474 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.490 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.438 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.565 ms - 7520[0m
+[0mGET /han-solo.png [32m200 [0m1.167 ms - 1144887[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.876 ms - 1151688[0m
+[0mGET /favicon.ico [33m404 [0m38.449 ms - 1265[0m
+[0mGET / [32m200 [0m0.448 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.231 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m1.527 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.667 ms - 7520[0m
+[0mGET /han-solo.png [32m200 [0m0.319 ms - 1144887[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.453 ms - 1151688[0m
+[0mGET /favicon.ico [33m404 [0m35.887 ms - 1265[0m
+[0mGET / [32m200 [0m0.504 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m13.986 ms - 1265[0m
+[0mGET / [32m200 [0m0.450 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.826 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.384 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.502 ms - 7520[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.834 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.750 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m7.939 ms - 1265[0m
+[0mGET / [32m200 [0m1.592 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.476 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.408 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.512 ms - 7520[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.440 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.477 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m11.740 ms - 1265[0m
+[0mGET / [36m304 [0m0.297 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.283 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.691 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.187 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.307 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m1.523 ms - -[0m
+[0mGET / [36m304 [0m0.278 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.319 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.506 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.212 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.296 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.580 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.641 ms - 1265[0m
+[0mGET / [36m304 [0m0.305 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.294 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.274 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.185 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.276 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.599 ms - -[0m
+[0mGET / [36m304 [0m0.286 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.478 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.451 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.258 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.166 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.552 ms - -[0m
+[0mGET / [36m304 [0m0.956 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.762 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.182 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.304 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m2.623 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m4.168 ms - -[0m
+[0mGET / [32m200 [0m0.464 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.505 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.308 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.550 ms - 7520[0m
+[0mGET /han-solo.png [32m200 [0m0.727 ms - 1144887[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.788 ms - 1151688[0m
+[0mGET /favicon.ico [33m404 [0m8.628 ms - 1265[0m
+[0mGET / [32m200 [0m0.437 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.560 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.296 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.514 ms - 7520[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.828 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.766 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m10.614 ms - 1265[0m
+[0mGET / [32m200 [0m0.473 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.473 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.414 ms - 7513[0m
+[0mGET /han-solo.png [32m200 [0m0.817 ms - 1144887[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.722 ms - 1151688[0m
+[0mGET /favicon.ico [33m404 [0m8.436 ms - 1265[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.562 ms - 7520[0m
+[0mGET / [36m304 [0m0.705 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.265 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.198 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.294 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.694 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.953 ms - -[0m
+[0mGET / [36m304 [0m0.325 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.789 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.272 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.193 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.210 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.535 ms - -[0m
+[0mGET / [36m304 [0m0.303 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.287 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.263 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.295 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m2.006 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.991 ms - -[0m
+[0mGET / [32m200 [0m0.436 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.477 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.394 ms - 7513[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.451 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.485 ms - 1144887[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.540 ms - 7520[0m
+[0mGET /favicon.ico [33m404 [0m13.275 ms - 1265[0m
+[0mGET / [36m304 [0m0.288 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.485 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.471 ms - -[0m
+[0mGET /han-solo.png [36m304 [0m0.444 ms - -[0m
+[0mGET /EdgeOfEmpire.png [36m304 [0m0.476 ms - -[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [36m304 [0m0.597 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m8.331 ms - 1265[0m
+[0mGET / [32m200 [0m0.440 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.229 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.969 ms - 7513[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.556 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m1.004 ms - 1144887[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.583 ms - 7520[0m
+[0mGET / [32m200 [0m0.497 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.405 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.393 ms - 7513[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.463 ms - 1151688[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.586 ms - 7520[0m
+[0mGET /han-solo.png [32m200 [0m0.468 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m7.359 ms - 1265[0m
+[0mGET / [32m200 [0m0.424 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m5.991 ms - 1265[0m
+[0mGET / [32m200 [0m0.465 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m4.539 ms - 1265[0m
+[0mGET / [32m200 [0m0.443 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.471 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.373 ms - 7513[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.474 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.413 ms - 1144887[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.547 ms - 7520[0m
+[0mGET /favicon.ico [33m404 [0m5.017 ms - 1265[0m
+[0mGET / [32m200 [0m0.457 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m11.159 ms - 1265[0m
+[0mGET / [32m200 [0m0.563 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m13.054 ms - 1265[0m
+[0mGET / [32m200 [0m0.421 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m6.700 ms - 1265[0m
+[0mGET / [32m200 [0m0.463 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m4.002 ms - 1265[0m
+[0mGET /favicon.ico [33m404 [0m5.491 ms - 1265[0m
+[0mGET / [32m200 [0m0.437 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m5.988 ms - 1265[0m
+[0mGET / [32m200 [0m0.423 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m4.564 ms - 1265[0m
+[0mGET /favicon.ico [33m404 [0m7.512 ms - 1265[0m
+[0mGET /favicon.ico [33m404 [0m3.788 ms - 1265[0m
+[0mGET / [32m200 [0m0.945 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m4.196 ms - 1265[0m
+[0mGET / [32m200 [0m0.396 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m4.178 ms - 1265[0m
+[0mGET / [32m200 [0m0.422 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.537 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m1.271 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.543 ms - 7520[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m2.128 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m1.817 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m4.565 ms - 1265[0m
+[0mGET / [32m200 [0m0.420 ms - 20018[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.379 ms - 2293[0m
+[0mGET /javascripts/app.js [32m200 [0m0.457 ms - 7513[0m
+In Species
+In Species + !!: [object Object]
+[0mGET /species [32m200 [0m0.522 ms - 7520[0m
+[0mGET /EdgeOfEmpire.png [32m200 [0m0.470 ms - 1151688[0m
+[0mGET /han-solo.png [32m200 [0m0.290 ms - 1144887[0m
+[0mGET /favicon.ico [33m404 [0m4.434 ms - 1265[0m
+[0mPOST /comments [33m404 [0m32.516 ms - 1265[0m
+[0mGET / [32m200 [0m0.552 ms - 20018[0m
+[0mGET /favicon.ico [33m404 [0m7.024 ms - 1265[0m

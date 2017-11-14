@@ -1,0 +1,196 @@
+
+
+body{
+    font-size: 175%;
+}
+#mainImage{
+    display: block; 
+    width: 100%;
+    margin-top: 35px;
+}
+
+.center-text{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+}
+
+.star-wars-text{
+   
+}
+
+#content{
+    min-width: 750px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+hr{
+    border-top: 1px solid #8c8b8b;
+}
+
+hr.style2{
+    border-top: 3px solid #8c8b8b;
+}
+
+.flex-container{
+    display: flex;
+
+}
+
+.panel-danger{
+    width: 50%;
+    margin: 5px;
+}
+
+
+
+.flex{
+    flex-grow: 1;
+    overflow:hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+#EoE-image{
+   width: 600px;
+   max-height: 400px; 
+   display:block;
+   margin:auto;
+  
+}
+
+.panel-title{
+    font-size: 155%;
+}
+
+#character-creator{
+    margin: 0 auto;
+    max-width: 90%;
+    min-width: 1050px;
+}
+
+#han-solo{
+    margin: 0 auto;
+    display: block; 
+    max-height: 700px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#text-name{
+    font-size: 155%;
+}
+
+.col-sm-3{ 
+}
+
+.value-panel{
+    width: 25%;
+    min-width: (.25*1050);
+    margin: 5px;
+}
+
+#SWSD-container{
+    text-align: center;
+}
+
+.center-input{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.side-by-side-container{
+  
+    display: flex;
+    justify-content: center;
+}
+
+.my-label-left{
+    text-align: left;
+}
+
+.my-label-right{
+    text-align: left;
+}
+
+.split-container{
+    width: 25%;
+}
+
+
+/**********************************************************************************************************/
+/*PART 2 */
+
+#skills{
+    width: 100%;
+}
+#combat-knowledge-container{
+width: 100%;
+}
+
+#general-skills{
+    width: 100%;
+    margin: 15px;
+    margin-top: 0px;
+}
+#combat-skills{
+    width: 100%;
+    
+}
+
+#XP-text-box{
+    margin-bottom: 25px;
+}
+
+.XP-Item{
+    padding: 25px;
+    float:left;
+    font-size: 125%;
+    text-decoration-color: white;
+    font-weight: bold;
+}
+
+.space-me{
+    padding-left: 15%;
+}
+
+.XP-panel{
+    width: 100%;
+    margin: 10px;
+}
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
+.space-me2{
+    padding-right: 5em;
+    margin-bottom: 5em;
+    font-size: 115%;
+    font-weight: bold;
+    
+}
+
+.first-item{
+    padding-left:3em;
+}
+.last-item{
+    padding-right: 0;
+    margin-bottom: 5em;
+}
+.chars{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.soak{
+    padding: 2.2em;
+}
+
