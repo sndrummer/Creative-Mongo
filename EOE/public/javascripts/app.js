@@ -11,6 +11,7 @@ function addObj(obj) {
 }
 
 
+
 app.factory('speciesFetcher', speciesFetcher)
 //app.factory('characterFectch', characterFetcher)
 
@@ -51,8 +52,6 @@ function mainCtrl($scope, speciesFetcher, $http) {
   $scope.UnusedXP = 0;
 
   $scope.characters = [
-    {name:'Guy1', species: 'Human'},
-    {name:'Guy2', species: 'Devaronian'}
   ];
   
   //$scope.species_selection = ;
@@ -61,6 +60,20 @@ function mainCtrl($scope, speciesFetcher, $http) {
   $scope.characterName = "";
 
 
+  $scope.newChar = function () {
+    if ($('#hideMe').is(":visible")) {
+      location.reload();
+      return;
+    }
+    else $('#hideMe').show();
+  }
+
+  $scope.loadChar = function () {
+     $('#hideMe').show();
+     $("#characterSelector").css("display", "block");
+     $("#characterSelector")[0].selectedIndex = 0;
+
+  }
 
   $scope.saveChar = function () {
     var species_selection = $('#species').find(":selected").text();

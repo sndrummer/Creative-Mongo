@@ -1,8 +1,4 @@
 
-function newChar() {
-    location.reload();
-}
-
 //load character
 function loadChar() {
     //

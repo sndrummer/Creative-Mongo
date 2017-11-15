@@ -206,3 +206,12 @@ width: 100%;
     font-size: 150%
 }
 
+#characterSelector{
+    display: none;
+    margin: auto;
+    width: 50%;
+}
+
+#hideMe{
+    display: none; 
+}
