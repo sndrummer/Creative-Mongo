@@ -13,8 +13,3 @@ function loadChar() {
       };
       $scope.getAll();
 }
-
-//load character
-function saveChar() {
-    //
-}

@@ -71,10 +71,12 @@
         <div id="loadSaveDiv">
             <button type="button" class="btn btn-danger btn-lg loadSaveButton" onclick="newChar()">CREATE NEW CHARACTER</button>
             <button type="button" class="btn btn-danger btn-lg loadSaveButton">LOAD CHARACTER</button>
-            <button type="button" class="btn btn-danger btn-lg loadSaveButton">SAVE CHARACTER</button>
+            <button type="button" class="btn btn-danger btn-lg loadSaveButton" ng-click="saveChar()">SAVE CHARACTER</button>
         </div>
 
-
+        <div ng-repeat="character in characters">
+            {{character.name}} - Species {{character.species}}
+        </div>
 
 
         <!--Angular LOAD/SAVE CHARACTER-->

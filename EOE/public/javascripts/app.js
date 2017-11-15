@@ -18,19 +18,7 @@ app.factory('speciesFetcher', speciesFetcher)
 
 
 
-
-
 app.controller('mainCtrl', mainCtrl);
-
-app.controller('mainCtrl', mainCtrl, ['$scope', function ($scope) {
-  
-
-  
-   
-
-  }])
-
-
 
 function speciesFetcher($http) {
 
@@ -49,24 +37,53 @@ function speciesFetcher($http) {
         })
     }
   }
-
- 
   //XP
-
-
 }
 
 function mainCtrl($scope, speciesFetcher, $http) {
 
-  $scope.species = []
+  $scope.species = [];
+  $scope.characters = [];
   $scope.StartXP = 0;
   $scope.EarnedXP = 0;
   $scope.TotalXP = 0;
   $scope.UsedXP = 0;
   $scope.UnusedXP = 0;
 
+  $scope.characters = [
+    {name:'Guy1', species: 'Human'},
+    {name:'Guy2', species: 'Devaronian'}
+  ];
+  
+  //$scope.species_selection = ;
+
 
   $scope.characterName = "";
+
+
+
+  $scope.saveChar = function () {
+    var species_selection = $('#species').find(":selected").text();
+    console.log("SELECTED: " + species_selection);
+    if (species_selection === '' || $scope.characterName === '') {
+      console.log("INVALID CHARACTER CHOOSE A NAME AND RACE");
+      return;
+    }
+    console.log("In saveChar with " + $scope.characterName + " who is a " +  species_selection);
+    $scope.create({
+      name: $scope.characterName,
+      species: species_selection,
+      
+    });
+  }
+
+  
+
+  $scope.create = function (character) {
+    return $http.post('/characters', character).success(function (data) {
+      $scope.characters.push(data);
+    });
+  };
 
   speciesFetcher.get()
     .then(function (data) {

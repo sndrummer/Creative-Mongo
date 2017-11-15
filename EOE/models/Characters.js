@@ -1,8 +1,14 @@
 var mongoose = require('mongoose');
 var CharacterSchema = new mongoose.Schema({
   name: String,
-  species: String,
-  career: String,
+  species: String
+});
+mongoose.model('Character', CharacterSchema);
+
+/**
+ * 
+ * 
+ career: String,
   specialization: String,
   brawn: {type: Number, default: 0},
   agility: {type: Number, default: 0},
@@ -68,5 +74,9 @@ outerRim: {type: Number, default: 0},
 underworld: {type: Number, default: 0},
 xenology: {type: Number, default: 0}
 
-});
-mongoose.model('Character', CharacterSchema);
+
+
+
+
+
+ */
