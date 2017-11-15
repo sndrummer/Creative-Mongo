@@ -45,7 +45,7 @@ hr.style2{
 
 .panel-danger{
     width: 50%;
-    margin: 5px;
+    
 }
 
 
@@ -73,6 +73,8 @@ hr.style2{
     margin: 0 auto;
     max-width: 90%;
     min-width: 1050px;
+    visibility: hidden;
+    
 }
 
 #han-solo{
@@ -110,6 +112,7 @@ hr.style2{
   
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
 .my-label-left{
@@ -163,7 +166,6 @@ width: 100%;
 
 .XP-panel{
     width: 100%;
-    margin: 10px;
 }
 
 .col-centered{
@@ -192,5 +194,16 @@ width: 100%;
 
 .soak{
     padding: 2.2em;
+}
+
+#loadSaveDiv {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loadSaveButton{
+    font-size: 150%
 }
 

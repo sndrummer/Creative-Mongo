@@ -64,64 +64,6 @@ function mainCtrl($scope, speciesFetcher, $http) {
 
 }
 
-
-
-/**
- * 
- * @param {*}  
- * 
-function speciesFetcher2($http) {
-
-  name = $scope.species_selection;
-  var API_ROOT = 'species-' + name
-  return {
-    get: function () {
-      return $http
-        .get(API_ROOT)
-        .then(function (resp) {
-          return resp.data
-        })
-    }
-  }
-
-}
-
-
-function mainCtrl2($scope, speciesFetcher, $http) {
-  
-    $scope.speciesSHOW = "";
-    speciesFetcher2.get()
-      .then(function (data) {
-        $scope.speciesSHOW = data;
-      });
-  
-  }
-
-
- */
-
-
-/*
-  $scope.addPoki = function () {
-  var formData = {
-    name: $scope.Name,
-    avatarUrl: $scope.Url
-  };
-  console.log(formData);
-  var pokiURL = 'species';
-  $http({
-    url: pokiURL,
-    method: "POST",
-    data: formData
-  }).success(function (data, status, headers, config) {
-    console.log("Post worked");
-  }).error(function (data, status, headers, config) {
-    console.log("Post failed");
-  });
-}
-  */
-
-
 //////////////////////////////////
 
 app.controller('formCtrl', function ($scope) {
