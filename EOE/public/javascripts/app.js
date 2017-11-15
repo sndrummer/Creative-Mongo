@@ -1,3 +1,4 @@
+
 var app = window.angular.module('app', [])
 var mySpec = "";
 //var allSpecies = [];
@@ -10,9 +11,8 @@ function addObj(obj) {
 }
 
 
-
-
 app.factory('speciesFetcher', speciesFetcher)
+//app.factory('characterFectch', characterFetcher)
 app.controller('mainCtrl', mainCtrl)
 
 function speciesFetcher($http) {

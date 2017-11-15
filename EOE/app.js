@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/EOE_DB',{useMongoClient:true});
+require('./models/Characters');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');

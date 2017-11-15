@@ -67,16 +67,455 @@
         </div>
     </div>
 
-
-    <div id="loadSaveDiv">
-            <button type="button" class="btn btn-danger btn-lg loadSaveButton" onclick="showCharCreate()">CREATE NEW CHARACTER</button>
+    <div id="character-creator" ng-app="app" class="ng-scope" ng-controller="appController">
+        <div id="loadSaveDiv">
+            <button type="button" class="btn btn-danger btn-lg loadSaveButton" onclick="newChar()">CREATE NEW CHARACTER</button>
             <button type="button" class="btn btn-danger btn-lg loadSaveButton">LOAD CHARACTER</button>
             <button type="button" class="btn btn-danger btn-lg loadSaveButton">SAVE CHARACTER</button>
-    </div>
-   
-   <div id="char-create"></div>
-    <!--End of Character Creator -->
+        </div>
 
+
+
+
+        <!--Angular LOAD/SAVE CHARACTER-->
+        <char-list></char-list>
+        <div id="char-create"></div>
+
+        <!--Angular Character Form-->
+
+        <p>
+            <hr class="style2">
+        </p>
+        <h1 class="center-text">CHARACTER</h1>
+        <img id="han-solo" src="han-solo.png">
+        <hr>
+        <form>
+            <div class="form-group">
+                <label id="text-name" for="name">CHARACTER NAME: {{characterName}}</label>
+                <input type="text" class="form-control" id="name" ng-model="characterName">
+            </div>
+
+            <div class="form-group">
+                <label for="species">Species:</label>
+                <species-list>
+            </div>
+
+
+
+            <!--REINSERT HERE IF DOENT WORK -->
+
+
+            <div class="form-group">
+                <label for="career">Career:</label>
+                <input type="text" class="form-control" id="career">
+            </div>
+            <div class="form-group">
+                <label for="career">Specialization Trees: {{specializationTrees}}</label>
+                <input type="text" class="form-control" id="career">
+            </div>
+        </form>
+        <p>
+            <hr>
+        </p>
+
+        <div ng-controller="xpController" class="panel panel-danger XP-panel" id="XP-text-box">
+            <div class="panel-heading">
+                <span class="first-item" id="StartXP"> Start XP: {{StartXP}}</span>
+                <span id="EarnedXP" class="space-me"> Earned XP: {{EarnedXP}}</span>
+                <span id="TotalXP" class="space-me"> Total XP: {{TotalXP}}</span>
+                <span id="UsedXP" class="space-me"> Used: {{UsedXP}}</span>
+                <span id="UnusedXP" class="space-me "> Unused XP: {{UnusedXP}}</span>
+            </div>
+        </div>
+        <!-- Values and characteristics -->
+
+        <div class="panel-heading chars">
+            <span class="space-me2" id="brawn"> BRAWN: 0</span>
+            <span id="agility" class="space-me2">AGILITY: 0</span>
+            <span id="intellect" class="space-me2">INTELLECT: 0</span>
+            <span id="cunning" class="space-me2">CUNNING: 0</span>
+            <span id="willpower" class="space-me2">WILLPOWER: 0</span>
+            <span id="presence" class="space-me2 last-item">PRESENCE: 0</span>
+        </div>
+        <!--REFER TO FLEX-->
+        <div id="SWSD-container" class="flex-container">
+            <!-- SOAK-->
+            <div class="panel panel-danger value-panel">
+                <div class="panel-heading">
+                    <h2 class="panel-title">SOAK VALUE</h2>
+                </div>
+                <div class="panel-body soak">
+                    <input class="center-input" id="soak-val" type="text">
+                </div>
+            </div>
+            <!-- Wounds-->
+            <div class="panel panel-danger value-panel flex">
+                <div class="panel-heading">
+                    <h2 class="panel-title">WOUNDS</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Threshold
+                        </div>
+                        <div class="col-xs-6">
+                            Current
+                        </div>
+                    </div>
+                    <div class="side-by-side-container">
+                        <input class="center-input" id="wounds-threshold" type="text" style="width: 25%;">
+                        <input class="center-input" id="wounds-current" type="text" style="width: 25%;">
+                    </div>
+                </div>
+            </div>
+            <!-- Strain-->
+            <div class="panel panel-danger value-panel flex">
+                <div class="panel-heading">
+                    <h2 class="panel-title">STRAIN</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Threshold
+                        </div>
+                        <div class="col-xs-6">
+                            Current
+                        </div>
+                    </div>
+                    <div class="side-by-side-container">
+                        <input class="center-input" id="strain-threshold" type="text" style="width: 25%;">
+                        <input class="center-input" id="strain-current" type="text" style="width: 25%;">
+                    </div>
+                </div>
+            </div>
+            <!-- DEFENSE-->
+            <div class="panel panel-danger value-panel flex">
+                <div class="panel-heading">
+                    <h2 class="panel-title">DEFENSE</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Ranged
+                        </div>
+                        <div class="col-xs-6">
+                            Melee
+                        </div>
+                    </div>
+                    <div class="side-by-side-container">
+                        <input class="center-input" id="ranged" type="text" style="width: 25%;">
+                        <input class="center-input" id="melee" type="text" style="width: 25%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Skills 
+        
+        Astrogation (Int)
+Athletics (Br)
+Charm (Pr)
+Coercion (Will)
+Computers (Int)
+Cool (Pr)
+Coordination (Ag)
+Deception (Cun)
+Discipline (Will)
+Leadership (Pr)
+Mechanics (Int)
+Medicine (Int)
+Negotiation (Pr)
+Perception (Cun)
+Piloting - Planetary (Ag)
+Piloting - Space (Ag)
+Resilience (Br)
+Skulduggery (Cun)
+Stealth (Ag)
+Streetwise (Cun)
+Survival (Cun)
+Vigilance (Will)
+
+
+
+
+
+
+Core Worlds (Int)
+Education (Int)
+Lore (Int)
+Outer Rim (Int)
+Underworld (Int)
+Xenology (Int)
+Other:
+        -->
+        <h1 class="center-text">Skills</h1>
+        <div id="skills" class="flex-container">
+
+            <div class="panel panel-info" id="general-skills">
+                <div class="panel-heading">
+                    <h2 class="panel-title">General Skills</h2>
+                </div>
+                <form>
+
+
+                    <div class="panel-body">
+
+
+                        <label for="Athletics">Athletics (Br):</label>
+
+                        <div class="form-group">
+
+                            <input type="number" class="form-control" ng-model="Athletics" id="Athletics">
+
+
+                        </div>
+
+
+                        <label for="Charm">Charm (Pr):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Charm">
+                        </div>
+
+                        <label for="Coercion">Coercion (Will):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Coercion">
+                        </div>
+
+                        <label for="Computers">Computers (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Computers">
+                        </div>
+
+                        <label for="Cool">Cool (Pr):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Cool">
+                        </div>
+
+                        <label for="Coordination">Coordination (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Coordination">
+                        </div>
+
+                        <label for="Deception">Deception (Cun):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Deception">
+                        </div>
+
+
+
+                        <label for="Discipline">Discipline (Will):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Discipline">
+                        </div>
+
+                        <label for="Leadership">Leadership (Pr):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Leadership">
+                        </div>
+
+                        <label for="Mechanics">Mechanics (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Mechanics">
+                        </div>
+
+                        <label for="Medicine">Medicine (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Medicine">
+                        </div>
+
+                        <label for="Negotiation">Negotiation (Pr):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Negotiation">
+                        </div>
+
+                        <label for="Perception">Perception (Cun):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Perception">
+                        </div>
+
+                        <label for="PilotingP">Piloting - Planetary (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="PilotingP">
+                        </div>
+
+                        <label for="PilotingS">Piloting - Space (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="PilotingS">
+                        </div>
+
+                        <label for="Resilience">Resilience (Br):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Resilience">
+                        </div>
+
+                        <label for="Skulduggery">Skulduggery (Cun):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Skulduggery">
+                        </div>
+
+                        <label for="Stealth">Stealth (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Stealth">
+                        </div>
+
+
+                        <label for="Streetwise">Streetwise (Cun):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Streetwise">
+                        </div>
+
+
+
+
+                        <label for="Survival">Survival (Cun):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Survival">
+                        </div>
+
+
+
+
+                        <label for="Vigilance">Vigilance (Will):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Vigilance">
+                        </div>
+
+
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div id="combat-knowledge-container">
+
+
+                <div class="panel panel-info" id="combat-skills">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Combat Skills</h2>
+                    </div>
+                    <div class="panel-body">
+
+
+                        <label for="Brawl">Brawl (Br):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Brawl">
+                        </div>
+
+
+
+
+                        <label for="Gunnery">Gunnery (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Gunnery">
+                        </div>
+
+
+
+
+                        <label for="Melee">Melee (Br):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Melee">
+                        </div>
+
+
+
+
+                        <label for="RangedL">Ranged - Light (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="RangedL">
+                        </div>
+
+
+                        <label for="RangedH">Ranged - Heavy (Ag):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="RangedH">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="panel panel-info" id="knowledge-skills">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Knowledge Skills</h2>
+                    </div>
+                    <div class="panel-body">
+
+                        <label for="Core-Worlds">Core Worlds (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Core-Worlds">
+                        </div>
+
+
+
+
+                        <label for="Education">Education (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Education">
+                        </div>
+
+
+
+
+                        <label for="Lore">Lore (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Lore">
+                        </div>
+
+
+                        <label for="Outer-Rim">Outer Rim (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Outer-Rim">
+                        </div>
+
+
+                        <label for="Underworld">Underworld (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Underworld">
+                        </div>
+
+                        <label for="Xenology">Xenology (Int):</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Xenology">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--                      -->
+
+        <div ng-controller='mainCtrl'>
+            <div ng-if='!species.length' class='no-species center stretch'>
+                <h1 class='h1'>
+                    Set up your endpoint at `/species` to get this view working
+                </h1>
+            </div>
+
+            <div ng-if='species.length' class='list center stretch'>
+                <div ng-repeat='s in species' class='species'>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--End of Character Creator -->
 </body>
 
 </html>
