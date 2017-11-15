@@ -13,7 +13,24 @@ function addObj(obj) {
 
 app.factory('speciesFetcher', speciesFetcher)
 //app.factory('characterFectch', characterFetcher)
-app.controller('mainCtrl', mainCtrl)
+
+
+
+
+
+
+
+app.controller('mainCtrl', mainCtrl);
+
+app.controller('mainCtrl', mainCtrl, ['$scope', function ($scope) {
+  
+
+  
+   
+
+  }])
+
+
 
 function speciesFetcher($http) {
 
@@ -33,12 +50,23 @@ function speciesFetcher($http) {
     }
   }
 
+ 
+  //XP
+
+
 }
 
 function mainCtrl($scope, speciesFetcher, $http) {
 
   $scope.species = []
+  $scope.StartXP = 0;
+  $scope.EarnedXP = 0;
+  $scope.TotalXP = 0;
+  $scope.UsedXP = 0;
+  $scope.UnusedXP = 0;
 
+
+  $scope.characterName = "";
 
   speciesFetcher.get()
     .then(function (data) {
@@ -66,20 +94,6 @@ function mainCtrl($scope, speciesFetcher, $http) {
 
 //////////////////////////////////
 
-app.controller('formCtrl', function ($scope) {
-  $scope.characterName = "";
-  //XP
-
-});
-
-app.controller('xpController', ['$scope', function ($scope) {
-
-  $scope.StartXP = 0;
-  $scope.EarnedXP = 0;
-  $scope.TotalXP = 0;
-  $scope.UsedXP = 0;
-  $scope.UnusedXP = 0;
-}])
 app.directive('xpDirective', function () {
 
 
@@ -97,8 +111,6 @@ app.directive('xpDirective', function () {
 
 });
 
-
-app.controller('appController', ['$scope', function ($scope) {}])
 app.directive('speciesList', function () {
   //var mySpec = $scope.species;
   //console.log(mySpec);

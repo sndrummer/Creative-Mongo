@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <div id="character-creator" ng-app="app" class="ng-scope" ng-controller="appController">
+    <div id="character-creator" ng-app="app" class="ng-scope" ng-controller="mainCtrl">
         <div id="loadSaveDiv">
             <button type="button" class="btn btn-danger btn-lg loadSaveButton" onclick="newChar()">CREATE NEW CHARACTER</button>
             <button type="button" class="btn btn-danger btn-lg loadSaveButton">LOAD CHARACTER</button>
@@ -118,7 +118,7 @@
             <hr>
         </p>
 
-        <div ng-controller="xpController" class="panel panel-danger XP-panel" id="XP-text-box">
+        <div class="panel panel-danger XP-panel" id="XP-text-box">
             <div class="panel-heading">
                 <span class="first-item" id="StartXP"> Start XP: {{StartXP}}</span>
                 <span id="EarnedXP" class="space-me"> Earned XP: {{EarnedXP}}</span>
@@ -499,18 +499,18 @@ Other:
 
         <!--                      -->
 
-        <div ng-controller='mainCtrl'>
-            <div ng-if='!species.length' class='no-species center stretch'>
-                <h1 class='h1'>
-                    Set up your endpoint at `/species` to get this view working
-                </h1>
-            </div>
 
-            <div ng-if='species.length' class='list center stretch'>
-                <div ng-repeat='s in species' class='species'>
-                </div>
+        <div ng-if='!species.length' class='no-species center stretch'>
+            <h1 class='h1'>
+                Set up your endpoint at `/species` to get this view working
+            </h1>
+        </div>
+
+        <div ng-if='species.length' class='list center stretch'>
+            <div ng-repeat='s in species' class='species'>
             </div>
         </div>
+
 
 
 

@@ -217,14 +217,11 @@
     "cunning": 2,
     "willpower": 2,
     "presence": 1,
-    "woundThreshold": 8,
-    "strainThreshold": 12,
+    "woundThreshold": 11,
+    "strainThreshold": 14,
     "StartingExperience": 90,
     "skills": [
-      "Streetwise 1"
-    ],
-    "specialAbilities": [
-      "Talents: Heightened Awareness"
+      "Heightened Awareness"
     ]
   },
   {
@@ -238,9 +235,12 @@
     "woundThreshold": 10,
     "strainThreshold": 10,
     "StartingExperience": 100,
-    "skills": [],
+    "skills": [
+      "Streetwise 1"
+    ],
     "specialAbilities": [
-      "Additional Non-Career Skill - Klatooninians start the game with one additional rank of one non-career skill of his choice."
+      "Talents: Heightened Awareness",
+      "Additional Non-Career Skill - Klatooinian start the game with one additional rank of one non-career skill of his choice."
     ]
   },
   {
