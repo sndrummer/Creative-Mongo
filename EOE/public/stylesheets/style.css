@@ -45,7 +45,7 @@ hr.style2{
 
 .panel-danger{
     width: 50%;
-    
+    margin:5px;
 }
 
 
@@ -149,6 +149,7 @@ width: 100%;
 
 #XP-text-box{
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .XP-Item{
@@ -160,7 +161,7 @@ width: 100%;
 }
 
 .space-me{
-    padding-left: 15%;
+    padding-left: 20px;
 }
 
 .XP-panel{
@@ -172,8 +173,8 @@ width: 100%;
     float: none;
 }
 .space-me2{
-    padding-right: 5em;
-    margin-bottom: 5em;
+    padding-right: 25px;
+    margin-bottom: 10px;
     font-size: 115%;
     font-weight: bold;
     
@@ -183,8 +184,9 @@ width: 100%;
     padding-left:3em;
 }
 .last-item{
-    padding-right: 0;
-    margin-bottom: 5em;
+    margin-bottom: 10px;
+    font-size: 115%;
+    font-weight: bold;
 }
 .chars{
     text-align: center;
@@ -207,11 +209,14 @@ width: 100%;
 }
 
 #characterSelector{
-    display: none;
     margin: auto;
     width: 50%;
 }
 
 #hideMe{
     display: none; 
+}
+
+#specialAbilites{
+   
 }

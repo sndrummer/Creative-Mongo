@@ -16,8 +16,8 @@
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Responsive meta for phone!! -->
+    
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
@@ -66,25 +66,34 @@
             </div>
         </div>
     </div>
-
+   
     <div id="character-creator" ng-app="app" class="ng-scope" ng-controller="mainCtrl">
         <div id="loadSaveDiv">
+                <h5 class="center-text">(uses mongoDB to save/load/delete characters)</h6>
             <button type="button" class="btn btn-danger btn-lg loadSaveButton" ng-click="newChar()">CREATE NEW CHARACTER</button>
-            <button type="button" class="btn btn-danger btn-lg loadSaveButton" ng-click="loadChar()">LOAD CHARACTER</button>
+            <button type="button" class="btn btn-danger btn-lg loadSaveButton" ng-click="getChars()">LOAD CHARACTER</button>
             <button type="button" class="btn btn-danger btn-lg loadSaveButton" ng-click="saveChar()">SAVE CHARACTER</button>
+            <button type="button" class="btn btn-danger btn-lg loadSaveButton" ng-click="deleteChar()">DELETE CHARACTER</button>
         </div>
 
 
+
+        <select class="form-control" id="characterSelector" ng-model="selectedChar" ng-change="loadChar()">
+                <option ng-model="infoText" selected disabled>{{infoText}}</option>
+                
+                <option id="option"ng-repeat="character in characters" value="{{character}}" > 
+                    <span class="glyphicon glyphicon-remove" ng-click="delete(character)"></span>
+                    {{character.name}} - Species {{character.species}}
+            </option>
+    </select>
+
+
+
+        <!--Angular <char-list></char-list>LOAD/SAVE CHARACTER-->
+
         <div id="hideMe">
 
-            <select class="form-control" id="characterSelector" ng-model="savedCharacters">
-            <option ng-repeat="character in characters" value="{{character.name}}">{{character.name}} - Species {{character.species}}</option>
-        </select>
 
-
-
-            <!--Angular LOAD/SAVE CHARACTER-->
-            <char-list></char-list>
             <div id="char-create"></div>
 
             <!--Angular Character Form-->
@@ -92,7 +101,14 @@
             <p>
                 <hr class="style2">
             </p>
-            <h1 class="center-text">CHARACTER</h1>
+            <h1 id="char-text" class="center-text">CHARACTER</h1>
+            <div class="center-text">
+                Character Image URL (optional):
+                <input type="text"  id="picURL">
+                <button onclick="updateImage()">Update Image</button>
+            </div>
+           
+                
             <img id="han-solo" src="han-solo.png">
             <hr>
             <form>
@@ -117,7 +133,7 @@
                 </div>
                 <div class="form-group">
                     <label for="career">Specialization Trees: {{specializationTrees}}</label>
-                    <input type="text" class="form-control" id="career">
+                    <input type="text" class="form-control" id="specTrees">
                 </div>
             </form>
             <p>
@@ -126,7 +142,7 @@
 
             <div class="panel panel-danger XP-panel" id="XP-text-box">
                 <div class="panel-heading">
-                    <span class="first-item" id="StartXP"> Start XP: {{StartXP}}</span>
+                    <span id="StartXP"> Start XP: {{StartXP}}</span>
                     <span id="EarnedXP" class="space-me"> Earned XP: {{EarnedXP}}</span>
                     <span id="TotalXP" class="space-me"> Total XP: {{TotalXP}}</span>
                     <span id="UsedXP" class="space-me"> Used: {{UsedXP}}</span>
@@ -141,7 +157,7 @@
                 <span id="intellect" class="space-me2">INTELLECT: 0</span>
                 <span id="cunning" class="space-me2">CUNNING: 0</span>
                 <span id="willpower" class="space-me2">WILLPOWER: 0</span>
-                <span id="presence" class="space-me2 last-item">PRESENCE: 0</span>
+                <span id="presence" class="last-item">PRESENCE: 0</span>
             </div>
             <!--REFER TO FLEX-->
             <div id="SWSD-container" class="flex-container">
@@ -255,7 +271,8 @@ Underworld (Int)
 Xenology (Int)
 Other:
         -->
-            <h1 class="center-text">Skills</h1>
+            <h1 class="center-text">Skills </h1>
+            <h6 class="center-text">(save functionality for skills will be added later)</h6>
             <div id="skills" class="flex-container">
 
                 <div class="panel panel-info" id="general-skills">
@@ -492,13 +509,30 @@ Other:
                                 <input type="number" class="form-control" id="Xenology">
                             </div>
 
+                            <!--   /////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+                         
 
-
-
+                            <!--   /////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
 
                         </div>
+                        
                     </div>
+                    <div class="panel panel-info" id="specialAbilites">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Special Abilities</h2>
+                            </div>
+                            <div class="panel-body">
 
+                                    <ul class="list-group">
+                                            <li ng-model="specialAbilites" ng-repeat="ab in specialAbilites">
+                                                {{ab}}
+                                            </li>
+                    
+                                        </ul>
+
+
+                            </div>
+                        </div>
                 </div>
 
             </div>
@@ -521,6 +555,7 @@ Other:
 
 
         </div>
+
     </div>
     <!--End of Character Creator -->
 </body>
